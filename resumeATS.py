@@ -12,9 +12,10 @@ def get_perplexity_output(pdf_text, prompt):
     """
     Function to interact with Perplexity AI API using the sonar-pro model
     """
-    api_key = os.getenv("PERPLEXITY_API_KEY")
-    if not api_key:
-        return "Error: PERPLEXITY_API_KEY not set in environment variables"
+    api_key = st.secrets["settings"]["PERPLEXITY_API_KEY"]
+    # api_key = os.getenv("PERPLEXITY_API_KEY")
+    # if not api_key:
+    #     return "Error: PERPLEXITY_API_KEY not set in environment variables"
     
     url = "https://api.perplexity.ai/chat/completions"
     headers = {
