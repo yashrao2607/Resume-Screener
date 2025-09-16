@@ -6,7 +6,7 @@ from PyPDF2 import PdfReader
 
 # Load environment variables
 load_dotenv()
-
+# done h ji 
 # Function to get Perplexity AI output
 def get_perplexity_output(pdf_text, prompt):
     """
