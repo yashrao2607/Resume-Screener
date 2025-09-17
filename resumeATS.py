@@ -54,7 +54,7 @@ def read_pdf(uploaded_file):
         raise FileNotFoundError("No file uploaded")
 
 # Streamlit UI
-st.set_page_config(page_title="ResumeATS Pro - Powered by Perplexity AI", layout="wide")
+st.set_page_config(page_title="ResumeATS Pro - Powered by Gemini AI", layout="wide")
 
 # Custom CSS for Apple-inspired design
 st.markdown("""
